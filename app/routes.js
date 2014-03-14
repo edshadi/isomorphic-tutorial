@@ -1,5 +1,4 @@
-var apiClient = require('./api_client')
-;
+var apiClient = require('./api_client');
 
 module.exports = function(match) {
   match('/', function(callback) {
