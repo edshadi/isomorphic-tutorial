@@ -1,4 +1,4 @@
-Isomorphic JavaScript Tutorial
+Isomorphic JavaScript Tutorial With Sinatra API
 ===================
 
 This is a small sample app built to demonstrate isomorphic JavaScript concepts.
@@ -70,12 +70,16 @@ This app uses [Grunt](http://gruntjs.com/) to build its assets. To run Grunt, we
     $ git clone git@github.com:spikebrehm/isomorphic-tutorial.git
     $ cd isomorphic-tutorial
 
-### Run `npm install` to install dependenices
+### Install dependenices
 
 	$ npm install
 	npm http GET https://registry.npmjs.org/superagent
 	npm http GET https://registry.npmjs.org/handlebars
 	npm http GET https://registry.npmjs.org/director
+    ...
+
+    $ cd sinatra-api/
+    bundle install
     ...
 
 ### Run the app!
@@ -87,6 +91,16 @@ We'll start up our local Node.js web server using Grunt, so it can automatically
 This will start our local web server on port `3030`.
 
 You can view it in your web browser at `http://localhost:3030/`
+
+In a different terminal:
+
+$ cd sinatra-api/
+shotgun api.rb
+...
+
+This will start the sinatra server on port `9393`.
+
+You can view it in your web browser at `http://localhost:9393/posts`
 
 ## Adding features
 
